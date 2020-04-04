@@ -20,3 +20,15 @@ input, select {
 .sheet-short-input {
     width:2em;
 }
+.sheet-long-input {
+    width: 100%;
+}
+.sheet-side-by-side {
+    display: flex;
+}
+.sheet-side-by-side label {
+    margin: 0 1em;
+}
+.sheet-vertical-space {
+    margin-bottom: 1em;
+}

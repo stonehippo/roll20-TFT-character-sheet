@@ -43,10 +43,12 @@
 
             <div class="block damage">
                 <h2>Mark off damage:</h2>
-                <label>Hits due to wounds</label>
-                <input type="number" class="short-input" name="attr_hits"/>
-                <label>ST lost due to fatigue</label>
-                <input type="number" class="short-input" name="attr_fatigue"/>
+                <div class="side-by-side">
+                    <label>Hits due to wounds</label>
+                    <input type="number" class="short-input" name="attr_hits"/>
+                    <label>ST lost due to fatigue</label>
+                    <input type="number" class="short-input" name="attr_fatigue"/>
+                </div>
             </div>
         </div>
     </div>
@@ -54,45 +56,51 @@
     <div class="block talentsSpellsLanguages">
         <h2>Talents</h2>
         <fieldset class="repeating_talents">
-            <input type="text" name="attr_talent"/>
+            <input type="text" class="long-input" name="attr_talent"/>
         </fieldset>
         <h2>Spells</h2>
         <fieldset class="repeating_spells">
-            <label>Name</label>
-            <input type="text" name="attr_spell"/>
-            <label>Fatigue</label>
-            <input type="text" class="short-input" name="attr_spellfatigue"/>
-            <label>Damage</label>
-            <input type="text" name="attr_spelldamage"/>
-            <label>Notes</label>
-            <input type="text" name="attr_spellnotes"/>
+            <div class="side-by-side">
+                <label>Name</label>
+                <input type="text" name="attr_spell"/>
+                <label>Fatigue</label>
+                <input type="text" class="short-input" name="attr_spellfatigue"/>
+                <label>Damage</label>
+                <input type="text" name="attr_spelldamage"/>
+                <label>Notes</label>
+                <input type="text" name="attr_spellnotes"/>
+            </div>
         </fieldset>
         <h2>Languages</h2>
         <fieldset class="repeating_languages">
-            <input type="text" name="attr_language"/>
+            <input type="text" class="long-input" name="attr_language"/>
         </fieldset>
     </div>
 
     <div class="block gear">
         <h2>Gear: items worn and carried in hands/belt</h2>
-        <label>Ready Weapon</label>
-        <input type="text" name="attr_readyweapon"/>
-        <label>Ready Weapon Damage</label>
-        <input type="text" name="attr_readyweapondamage"/>
-        <label>Armor Worn</label>
-        <input type="text" name="attr_armorworn"/>
-        <label>Armor Hits Stopped</label>
-        <input type="text" class="short-input" name="attr_armorhits"/>
-        <label>Shield Carried</label>
-        <input type="text" name="attr_shieldcarried"/>
-        <label>Shield Hits Stopped</label>
-        <input type="text" class="short-input" name="attr_shieldhits"/>
+        <div class="side-by-side vertical-space">
+            <label>Ready Weapon</label>
+            <input type="text" name="attr_readyweapon"/>
+            <label>Ready Weapon Damage</label>
+            <input type="text" name="attr_readyweapondamage"/>
+        </div>
+        <div class="side-by-side vertical-space">
+            <label>Armor Worn</label>
+            <input type="text" name="attr_armorworn"/>
+            <label>Armor Hits Stopped</label>
+            <input type="text" class="short-input" name="attr_armorhits"/>
+            <label>Shield Carried</label>
+            <input type="text" name="attr_shieldcarried"/>
+            <label>Shield Hits Stopped</label>
+            <input type="text" class="short-input" name="attr_shieldhits"/>
+        </div>
         <label>Magical Protection (if any)</label>
-        <input type="text" name="attr_magicalprotection"/>
+        <input type="text" class="long-input" name="attr_magicalprotection"/>
         <label>Items Carried On Belt</label>
-        <input type="text" name="attr_beltitems"/>
+        <input type="text" class="long-input" name="attr_beltitems"/>
         <label>Items Carried In Belt Pouch</label>
-        <input type="text" name="attr_beltpouchitems"/>
+        <input type="text" class="long-input" name="attr_beltpouchitems"/>
         <h3>Backpack Items</h3>
         <fieldset class="repeating_backpackitems">
             <label>Item</label>
@@ -113,7 +121,7 @@
     <div class="block followers">
         <h2>Followers (human or monster). List here, and make a seperate record for each</h2>
         <fieldset class="repeating_followers">
-        
+            <input type="text" class="long-input" name="attr_follower"/>
         </fieldset>
         <h3>Trained Animals</h3>
         <fieldset class="repeating_trainedanimals">
