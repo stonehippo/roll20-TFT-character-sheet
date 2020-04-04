@@ -1,0 +1,22 @@
+@import url('https://fonts.googleapis.com/css?family=Dosis|Cormorant&display=swap');
+h1, h2, h3, label {
+    font-family: 'Cormorant', serif;
+}
+input, select {
+    font-family: 'Dosis', sans-serif;
+}
+.sheet-container {}
+.sheet-block {
+    border: 1px solid black;
+    padding: 1em;
+    margin: 1em 0;
+}
+.sheet-details {}
+.sheet-stats {}
+.sheet-damage {}
+.sheet-talentsSpellsLanguages {}
+.sheet-gear {}
+.sheet-followers {}
+.sheet-short-input {
+    width:2em;
+}

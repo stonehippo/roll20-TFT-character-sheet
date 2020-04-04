@@ -1,0 +1,129 @@
+<h1>The Fantasy Trip Character Sheet</h1>
+
+<div class="container">
+    <div class="2colrow">
+        <div class="col">
+            <div class="block details">
+                <label>Name</label>
+                <input type="text" name="attr_character_name"/>
+                <label>Gender</label>
+                <input type="text" name="attr_gender"/>
+                <label>Race</label>
+                <select name="attr_race">
+                    <option value="human" selected="selected">Human</option>
+                    <option value="dwarf">Dwarf</option>
+                    <option value="elf">Elf</option>
+                    <option value="goblin">Goblin</option>
+                    <option value="halfling">Halfling</option>
+                    <option value="orc">Orc</option>
+                    <option value="silenos">Silenos</option>
+                </select>
+                <label>Job</label>
+                <input type="text" name="attr_job"/>
+                <label>Pay</label>
+                <input type="text" name="attr_pay"/>
+                <label>Risk</label>
+                <input type="text" name="attr_risk"/>
+            </div>
+        </div>
+        <div class="col">
+            <div class="block stats">
+                <label>ST</label>
+                <input type="number" class="short-input" name="attr_ST" value="8"/>
+                <label>DX (adjDX)</label>
+                <input type="number" class="short-input" name="attr_DX" value="8"/>
+                <input type="number" class="short-input" name="att_adjDX" value="8" />
+                <label>IQ</label>
+                <input type="number" class="short-input" name="attr_IQ" value="8"/>
+                <label>MA</label>
+                <input type="number" class="short-input" name="attr_MA" value="10"/>
+                <label>Damage done with bare hands</label>
+                <input type="text" name="attr_barehandsdamage"/>
+            </div>
+
+            <div class="block damage">
+                <h2>Mark off damage:</h2>
+                <label>Hits due to wounds</label>
+                <input type="number" class="short-input" name="attr_hits"/>
+                <label>ST lost due to fatigue</label>
+                <input type="number" class="short-input" name="attr_fatigue"/>
+            </div>
+        </div>
+    </div>
+
+    <div class="block talentsSpellsLanguages">
+        <h2>Talents</h2>
+        <fieldset class="repeating_talents">
+            <input type="text" name="attr_talent"/>
+        </fieldset>
+        <h2>Spells</h2>
+        <fieldset class="repeating_spells">
+            <label>Name</label>
+            <input type="text" name="attr_spell"/>
+            <label>Fatigue</label>
+            <input type="text" class="short-input" name="attr_spellfatigue"/>
+            <label>Damage</label>
+            <input type="text" name="attr_spelldamage"/>
+            <label>Notes</label>
+            <input type="text" name="attr_spellnotes"/>
+        </fieldset>
+        <h2>Languages</h2>
+        <fieldset class="repeating_languages">
+            <input type="text" name="attr_language"/>
+        </fieldset>
+    </div>
+
+    <div class="block gear">
+        <h2>Gear: items worn and carried in hands/belt</h2>
+        <label>Ready Weapon</label>
+        <input type="text" name="attr_readyweapon"/>
+        <label>Ready Weapon Damage</label>
+        <input type="text" name="attr_readyweapondamage"/>
+        <label>Armor Worn</label>
+        <input type="text" name="attr_armorworn"/>
+        <label>Armor Hits Stopped</label>
+        <input type="text" class="short-input" name="attr_armorhits"/>
+        <label>Shield Carried</label>
+        <input type="text" name="attr_shieldcarried"/>
+        <label>Shield Hits Stopped</label>
+        <input type="text" class="short-input" name="attr_shieldhits"/>
+        <label>Magical Protection (if any)</label>
+        <input type="text" name="attr_magicalprotection"/>
+        <label>Items Carried On Belt</label>
+        <input type="text" name="attr_beltitems"/>
+        <label>Items Carried In Belt Pouch</label>
+        <input type="text" name="attr_beltpouchitems"/>
+        <h3>Backpack Items</h3>
+        <fieldset class="repeating_backpackitems">
+            <label>Item</label>
+            <input type="text" name="attr_backpackitem"/>
+            <label>Weight</label>
+            <input type="text" class="short-input" name="attr_backpackitemweight"/>
+        </fieldset>
+        <label>Armor Weight</label>
+        <input type="text" class="short-input" name="attr_armorweight"/>
+        <label>Weight of In Hands/Belt Items</label>
+        <input type="text" class="short-input" name="attr_itemscarriedweight"/>
+        <label>Weight Of Backpack Items</label>
+        <input type="text" class="short-input" name="attr_itemsbackpackweight"/>
+        <label>Total Weight</label>
+        <input type="text" class="short-input" name="attr_totalweight"/>
+    </div>
+
+    <div class="block followers">
+        <h2>Followers (human or monster). List here, and make a seperate record for each</h2>
+        <fieldset class="repeating_followers">
+        
+        </fieldset>
+        <h3>Trained Animals</h3>
+        <fieldset class="repeating_trainedanimals">
+            <span>Name and species</span>
+            <input type="text" name="attr_trainedanimalname"/>
+            <span>Obeys on roll of</span>
+            <input type="text" class="short-input" name="attr_obeyson"/>
+            <span>on</span>
+            <input type="text" class="short-input" name="attr_obeysdice"/>
+            <span>dice.</span>
+        </fieldset>
+    </div>
+</div>
